@@ -1,0 +1,102 @@
+html,body{
+    padding:0;
+    margin:0;
+}
+
+@media only screen and (max-width:767px){
+    html{font-size: 10px;}
+}
+
+@media only screen and (min-width:768px) and (max-width:1023px){
+    html{font-size: 12px;}
+}
+
+@media only screen and (min-width:1024px) and (max-width:1199px){
+    html{font-size: 14px;}
+}
+
+@media only screen and (min-width:1200px){
+    html{font-size: 15px;}
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+}
+
+/* top */
+.top{
+    height: 4.4rem;
+    box-sizing: border-box;
+    padding: 1.2rem 9rem;
+    position: relative;
+    border-bottom: 1px solid #d2d2d2;
+    text-align: center;
+}    
+#logo{
+    height: 100%;
+}
+#avatar{
+    height:100%;
+
+}
+
+/* middle */
+.middle{
+    flex: 1;
+    background: #EFEFEF;
+}
+.middle-content{
+    padding: 0 10rem;
+    height: 100%;
+    position: relative;
+}
+
+#side-bar{
+    height: 100%;
+    width: 20rem;
+    background: #3a4e63;
+    position: absolute;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+#side-bar .menu-ul{
+    list-style: none;
+    margin: 2em 0;
+    padding: 0;
+}
+
+#side-bar .menu-ul li{
+    cursor: pointer;
+    height: 40px;
+    line-height: 40px;
+    height: 40px;
+    padding: 0 2em;
+    color: #CCC;
+    font-family: Avenir,Helvetica,Arial,sans-serif;
+}
+#side-bar .menu-ul li:hover{
+    color:#00B4CF;
+    background-color: #435466;
+}
+
+#side-bar .history p{
+    font-size: 1.15rem;
+    color: #CCC;
+    padding: 0 1rem;
+}
+
+#side-bar .history ul{
+    padding: 0;
+}
+
+/* footer */
+.footer{
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 2rem;
+    border-top: 1px solid #d2d2d2;
+}
