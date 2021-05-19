@@ -17,7 +17,7 @@
         <div class="middle">
           <div class="middle-content">
             <!-- side bar -->
-            <div id="side-bar">
+            <sidebar id="side-bar">
               <ul class="menu-ul"> 
                 <li>DASHBOARD</li>
                 <li>AGENT</li>
@@ -26,7 +26,7 @@
               </ul>
 
               <div class="history">
-                <p>History</p>
+                <span>History</span>
                 <ul class="history-list">
                   <li>bjstdmngbgr04/Acceptance_test</li>
                   <li>bjstdmngbgr05/Acceptance_test</li>
@@ -40,10 +40,54 @@
                   <li>bjstdmngbgr13/Acceptance_test</li>
                 </ul>
               </div>
-            </div>
+            </sidebar>
 
             <!-- right content -->
-            <div id="right-content"></div>            
+            <section id="right-content">
+              <section class="cards">
+                <div class="card" id="cards-1">
+                  <p class="title">Building</p>
+                  <p class="value">3</p>
+                </div>
+                <div class="card" id="cards-2">
+                  <p class="title">Idle</p>
+                  <p class="value">5</p>
+                </div>
+                <div class="card" id="cards-3">
+                  <div class="sum">
+                    <span class="title">ALL</span>
+                    <span class="value">8</span>
+                  </div>
+                  <div class="sum">
+                    <span class="title">PHYSICAL</span>
+                    <span class="value">4</span>
+                  </div>
+                  <div class="sum">
+                    <span class="title">VIRTUAL</span>
+                    <span class="value">4</span>
+                  </div>
+                </div>
+              </section>
+
+              <!-- search -->
+              <section class="search-bar">
+                <ul class="types">  
+                  <li>All</li>
+                  <li>Physical</li>
+                  <li>Virtual</li>
+                </ul>
+                <span class="search-input">
+                  <input type="search" results="s">
+                </span>
+
+                <span class="display-type">
+                  <span class="type"></span>
+                  <span class="type"></span>
+                </span>
+              </section>
+              <!-- agents -->
+              <section class="agents"></section>
+            </section>            
           </div>
         </div>
 
